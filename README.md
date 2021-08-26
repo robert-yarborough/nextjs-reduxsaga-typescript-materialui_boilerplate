@@ -1,7 +1,33 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# NextJS + Redux-Saga + TypeScript + Material-UI 
+## Boilerplate Template
 
+## Description of Architecture
+```
+TypeScript configuration
+
+Material-UI theme configured
+
+Starting point for state with Redux-Saga
+
+Model, response, and page state types
+
+Basic load/complete/error actions and reducer
+
+Saga to call API and dispatch completed/error states
+
+"Isomorphic" API usable via fetch from the client or directly in getServerSideProps
+
+Server Side Rendering support with Redux thanks to next-redux-wrapper
+
+Helper Functions
+
+A few handy common utilities like Input and Loader components
+
+```
+
+## How to get started
 First, run the development server:
 
 ```bash
@@ -32,3 +58,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+

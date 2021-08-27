@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
-import PropTypes from 'prop-types';
 import moment from 'moment';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import { makeStyles } from '@material-ui/styles';
@@ -41,7 +40,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const UsersTable = props => {
+const UsersTable = (props) => {
   const { className, users, ...rest } = props;
 
   const classes = useStyles();
@@ -95,8 +94,7 @@ const UsersTable = props => {
   return (
     <Card
       {...rest}
-      className={clsx(classes.root, className)}
-    >
+      className={clsx(classes.root, className)}>
       <CardContent className={classes.content}>
         <PerfectScrollbar>
           <div className={classes.inner}>
@@ -179,9 +177,5 @@ const UsersTable = props => {
   );
 };
 
-UsersTable.propTypes = {
-  className: PropTypes.string,
-  users: PropTypes.array.isRequired
-};
 
 export default UsersTable;

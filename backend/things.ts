@@ -1,5 +1,5 @@
-import {randomSample} from '../lib/helpers'
-import {Thing} from '../store/types'
+import { randomSample } from '../lib/helpers'
+import { Thing } from '../state/types'
 import log from '../lib/log'
 
 const ERROR_RATE = 0.2
